@@ -1,1 +1,121 @@
-<h1 id="title">Your favorite books</h1<>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+          #title{
+            background-color: #99ccff;
+          }
+
+          .text-center{
+             text-align: center;
+           }
+
+          #description{
+            font-size: 35px
+          }
+
+          body {
+            font-family: sans-serif;
+            padding-left: 20%;
+            padding-right: 20%;
+          }
+
+          label {
+            font-size: 35px;
+            display: block;
+            padding-bottom: 10px;
+          }
+          input, textarea, select {
+            font-size: 30px;
+            display: block;
+            width: 100%;
+            padding-bottom: 20px;
+          }
+
+          form {
+            background-color: #99ccff;
+            padding: 40px 40px 40px 40px;
+          }
+
+          #button-area {
+            float: left;
+            width: 50%;
+            height: 50%;
+            font-size: 25px;
+          }
+
+          input[type=checkbox]:not(old) + label,
+          input[type=radio]:not(old) + label {
+            display: inline-block;
+            margin-left: -28px;
+            padding-left: 28px;
+          }
+
+
+
+        </style>
+
+  </head>
+
+  <header>
+    <h1 id="title" class="text-center">Your favorite books</h1<>
+      <p id="description">
+        In this survey you can share with us about your books preferences.
+      </p>
+  </header>
+    <body>
+      <form id="survey-form">
+        <label id="name-label">Name: </label>
+        <input type="text" name="name" id="name" required placeholder="Firts Name"></input><br>
+
+        <label id="email-label">Email: </label>
+        <input type="email" name="email" id="email" required placeholder="Email"></input><br>
+
+        <label id="number-label">Age: </label>
+        <input type="number" name="number" id="number" min="13" max="100" required placeholder="Age"></input><br>
+
+        <label id="categories-label">What´s your favorite book categorie?</label>
+        <select id="dropdown" name="categories">
+          <option value="action and adventure">Action and Adventure</option>
+          <option value="comic book/graphic novel">Comic Book/Graphic Novel</option>
+          <option value="mystery">Mystery</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="sci-Fi">Sci-Fi</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="thrillers">Thrillers</option>
+          <option value="biographies">Biographies</option>
+          <option value="history">History</option>
+          <option value="poetry">Poetry</option>
+          <option value="self-help">Self-Help</option>
+          <option value="crime">Crime</option>
+          <option value="short stories">Short Stories</option>
+          <option value="literary fiction">Literary Fiction</option>
+        </select>
+          <br>
+        <div id="button-area">
+          <label id="recomend-label"> Do you recomend books?.</label>
+          <input type="radio" class="radio-inline" name="recomend" value="all the time">All the time<br>
+          <input type="radio" class="radio-inline" name="recomend" value="sometimes">Sometimes<br>
+          <input type="radio" class="radio-inline" name="recomend" value="never">Never
+        </div>
+        <div id="button-area">
+          <label id="element-label"> In fiction what´s your favorite element?</label>
+          <input type="checkbox" name="element" value="characters">Characters<br>
+          <input type="checkbox" name="element1" value="plot">Plot<br>
+          <input type="checkbox" name="element2" value="theme">Theme<br>
+          <input type="checkbox" name="element3" value="tone">Tone<br>
+        </div>
+
+        <label id="additional-comments-label">Additional comments</label>
+        <textarea placeholder="Additional comments"></textarea>
+
+        <input type="submit" id="submit">
+
+      </form>
+    <script type="text/javascript"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+ </body>
+</html>
